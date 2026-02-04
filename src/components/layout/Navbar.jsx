@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../ui/Button';
 import { Container } from '../ui/Layout';
@@ -6,11 +7,11 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Markets', href: '#markets' },
-    { name: 'Accounts', href: '#accounts' },
-    { name: 'Tools', href: '#tools' },
-    { name: 'Company', href: '#company' },
+    { name: 'Home', href: '/' },
+    { name: 'Markets', href: '/markets' },
+    { name: 'Accounts', href: '/accounts' },
+    { name: 'Tools', href: '/tools' },
+    { name: 'Company', href: '/company' },
 ];
 
 export default function Navbar() {
@@ -23,20 +24,20 @@ export default function Navbar() {
             <Container>
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
-                    <div className="flex-shrink-0 cursor-pointer">
+                    <Link to="/" className="flex-shrink-0 cursor-pointer">
                         <img src="/logo.png" alt="Roths Capitals" className="h-12 md:h-16" />
-                    </div>
+                    </Link>
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.name}
-                                href={link.href}
+                                to={link.href}
                                 className="text-lg font-medium text-gray-600 hover:text-primary transition-colors"
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
@@ -69,14 +70,14 @@ export default function Navbar() {
                     >
                         <Container className="py-6 space-y-4">
                             {navLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.name}
-                                    href={link.href}
+                                    to={link.href}
                                     className="block text-base font-medium text-gray-600 hover:text-primary"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     {link.name}
-                                </a>
+                                </Link>
                             ))}
                             <div className="pt-4 flex flex-col space-y-3">
                                 <Button variant="outline" className="w-full justify-center">Log In</Button>

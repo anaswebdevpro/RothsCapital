@@ -61,11 +61,11 @@ export default function Platforms() {
                     </div>
 
                     <div className="flex-1 relative">
-                        <div className="relative z-10 p-4 border border-gray-200 rounded-3xl bg-white/50 backdrop-blur-md">
+                        <div className="relative z-10 p-4 rounded-3xl bg-white/50 backdrop-blur-md">
                             <img
-                                src="/heroBanner.png"
+                                src="/mt5phone.png"
                                 alt="MetaTrader 5 Interface"
-                                className="rounded-2xl w-full shadow-2xl"
+                                className="rounded-2xl w-full "
                             />
                         </div>
                         {/* Backsplash */}

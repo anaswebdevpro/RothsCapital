@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div className="space-y-6">
-                        <img src="/logo.png" alt="Roths Capitals" className="h-10" />
+                        <img src="/logo.png" alt="Roths Capitals" className="h-20" />
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Trusted Forex broker providing premium trading solutions with raw spreads, fast execution, and institutional-grade conditions.
                         </p>
@@ -50,7 +50,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail size={18} className="text-primary" />
-                                <span className="text-gray-600 text-sm">support@rakizcapitals.com</span>
+                                <span className="text-gray-600 text-sm">support@Roths Capitals.com</span>
                             </li>
                         </ul>
                     </div>

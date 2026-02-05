@@ -63,6 +63,10 @@
   animation: gradient 3s ease infinite;
 }
 
+.bg-gold-gradient {
+  background: radial-gradient(circle, #F3E5AB 0%, #D4AF37 100%);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

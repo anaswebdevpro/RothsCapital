@@ -15,7 +15,7 @@ const Button = React.forwardRef(({
     const Component = href ? (motion.a) : (motion.button);
 
     const variants = {
-        primary: 'bg-primary text-white hover:bg-primary-hover shadow-lg shadow-primary/20',
+        primary: 'bg-[#DCBE57] text-white hover:bg-primary-hover shadow-lg shadow-primary/20',
         outline: 'border border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/50',
         ghost: 'text-gray-600 hover:text-secondary hover:bg-black/5',
         white: 'bg-secondary text-white hover:bg-secondary/90',

@@ -53,7 +53,7 @@ const MT5Features = () => {
                                     className="flex gap-6 group hover:translate-x-2 transition-transform duration-300"
                                 >
                                     <div className="flex-shrink-0">
-                                        <div className="text-4xl font-black text-transparent bg-clip-text bg-gold-gradient opacity-60 group-hover:opacity-100 transition-opacity">
+                                        <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#D4AF37] to-[#F3E5AB] opacity-60 group-hover:opacity-100 transition-opacity">
                                             {feature.number}
                                         </div>
                                     </div>

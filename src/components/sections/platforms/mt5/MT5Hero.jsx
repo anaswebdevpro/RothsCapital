@@ -55,7 +55,7 @@ const MT5Hero = () => {
                         <img
                             src="/mt5phone.png"
                             alt="MetaTrader 5 Platform"
-                            className="rounded-lg border border-gray-100 w-full max-w-lg mx-auto transform hover:scale-[1.02] transition-transform duration-500"
+                            className="rounded-lg w-full max-w-lg mx-auto transform hover:scale-[1.02] transition-transform duration-500"
                             onError={(e) => {
                                 e.target.style.display = 'none';
                                 e.target.parentElement.innerHTML = '<div class="w-full h-[400px] bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">Platform Preview Image</div>';

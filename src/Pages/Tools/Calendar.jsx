@@ -4,7 +4,7 @@ import CalendarWidget from '../../components/sections/tools/calendar/CalendarWid
 
 const Calendar = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <CalendarHero />
             <CalendarWidget />
         </div>

@@ -7,7 +7,7 @@ import CryptoCTA from '../../components/sections/crypto/CryptoCTA';
 
 const Crypto = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <CryptoHero />
             <CryptoFeatures />
             <CryptoWidget />

@@ -8,10 +8,10 @@ import Features from '../../components/sections/home/Features';
 
 const MT5 = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <MT5Hero />
             <MT5Features />
-               <Features />
+            <Features />
             <MT5Anywhere />
             <MT5Downloads />
             {/* <MT5CTA /> */}

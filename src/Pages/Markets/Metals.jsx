@@ -7,7 +7,7 @@ import MetalsCTA from '../../components/sections/metals/MetalsCTA';
 
 const Metals = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <MetalsHero />
             <MetalsFeatures />
             <MetalsWidget />

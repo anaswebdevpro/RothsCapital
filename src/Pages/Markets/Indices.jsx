@@ -7,7 +7,7 @@ import IndicesCTA from '../../components/sections/indices/IndicesCTA';
 
 const Indices = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <IndicesHero />
             <IndicesFeatures />
             <IndicesWidget />

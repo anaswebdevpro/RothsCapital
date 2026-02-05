@@ -5,7 +5,7 @@ import FAQCTA from '../../components/sections/company/faq/FAQCTA';
 
 const FAQ = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <FAQHero />
             <FAQList />
             <FAQCTA />

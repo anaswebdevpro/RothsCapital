@@ -6,7 +6,7 @@ import IBCTA from '../../components/sections/partnership/ib_program/IBCTA';
 
 const IBProgram = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <IBHero />
             <IBTypes />
             <IBBenefits />

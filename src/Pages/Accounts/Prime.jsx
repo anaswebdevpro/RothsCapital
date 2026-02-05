@@ -7,7 +7,7 @@ import AccountTypes from '../../components/sections/home/AccountTypes';
 
 const Prime = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <PrimeHero />
             <PrimeSteps />
             <AccountTypes />

@@ -7,7 +7,7 @@ import StocksCTA from '../../components/sections/stocks/StocksCTA';
 
 const Stocks = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <StocksHero />
             <StocksFeatures />
             <StockMarketWidget />

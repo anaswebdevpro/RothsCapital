@@ -7,7 +7,7 @@ import AboutCTA from '../../components/sections/company/about/AboutCTA';
 
 const About = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <AboutHero />
             <AboutMission />
             <AboutInfo />

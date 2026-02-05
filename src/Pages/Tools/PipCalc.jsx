@@ -4,7 +4,7 @@ import PipCalculator from '../../components/sections/tools/pip_calc/PipCalculato
 
 const PipCalc = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <PipCalcHero />
             <PipCalculator />
         </div>

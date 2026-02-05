@@ -13,7 +13,7 @@ export default function Hero() {
                     alt="Background"
                     className="w-full h-full object-cover opacity-60"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/60 to-secondary z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/30 to-secondary z-10" />
             </div>
 
             <Container className="relative z-20 flex flex-col flex-grow items-center text-center">

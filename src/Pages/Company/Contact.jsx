@@ -6,7 +6,7 @@ import ContactForm from '../../components/sections/company/contact/ContactForm';
 
 const Contact = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <ContactHero />
             <ContactGrid />
             <ContactOffice />

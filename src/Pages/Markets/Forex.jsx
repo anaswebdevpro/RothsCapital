@@ -8,7 +8,7 @@ import ForexCTA from '../../components/sections/forex/ForexCTA';
 
 const Forex = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <ForexHero />
             <ForexFeatures />
             <CurrencyMatrix />

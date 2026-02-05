@@ -7,7 +7,7 @@ import AccountTypes from '../../components/sections/home/AccountTypes';
 
 const ECN = () => {
     return (
-        <div className="pt-20"> {/* Add padding for fixed navbar */}
+        <div>
             <ECNHero />
             <ECNSteps />
             <AccountTypes />

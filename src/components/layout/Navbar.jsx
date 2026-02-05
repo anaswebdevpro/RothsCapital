@@ -73,7 +73,7 @@ export default function Navbar() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 z-50 bg-[#21232D] text-white backdrop-blur-md py-1 shadow-sm"
+            className="fixed top-0 left-0 right-0 z-50 bg-[#151925] text-white backdrop-blur-md py-1 shadow-sm"
             onMouseLeave={() => setHoveredLink(null)}
         >
             <Container>

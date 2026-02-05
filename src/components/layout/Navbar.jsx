@@ -48,7 +48,7 @@ const navLinks = [
         ]
     },
     {
-        name: 'Company',    
+        name: 'Company',
         href: '#',
         description: 'Learn more about us',
         subItems: [
@@ -73,14 +73,14 @@ export default function Navbar() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-gray-200 py-1 shadow-sm"
+            className="fixed top-0 left-0 right-0 z-50 bg-[#21232D] text-white backdrop-blur-md py-1 shadow-sm"
             onMouseLeave={() => setHoveredLink(null)}
         >
             <Container>
                 <nav className="flex items-center justify-between relative z-50 ">
                     {/* Logo */}
                     <Link to="/" className="flex-shrink-0 cursor-pointer">
-                        <img src="/logo.png" alt="Roths Capitals" className="h-12 md:h-16" />
+                        <img src="/logo.png" alt="Roths Capitals" className="h-12 md:h-15" />
                     </Link>
 
                     {/* Desktop Nav */}
@@ -94,7 +94,7 @@ export default function Navbar() {
                             >
                                 <Link
                                     to={link.href}
-                                    className="flex items-center text-sm lg:text-base font-medium text-gray-600 hover:text-primary transition-colors py-4"
+                                    className="flex items-center text-sm lg:text-base font-medium text-white hover:text-primary transition-colors py-4"
                                 >
                                     {link.name}
                                     {link.subItems && (
@@ -137,7 +137,7 @@ export default function Navbar() {
 
                     {/* CTA Buttons */}
                     <div className="hidden md:flex items-center space-x-4">
-                        <Button variant="ghost" size="md" className="text-gray-700 hover:bg-gray-100">Log In</Button>
+                        <Button variant="ghost" size="md" className="text-white hover:bg-white/10 hover:text-primary">Log In</Button>
                         <Button size="md">Register</Button>
                     </div>
 
@@ -145,7 +145,7 @@ export default function Navbar() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="text-gray-600 hover:text-secondary"
+                            className="text-white hover:text-primary"
                         >
                             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>

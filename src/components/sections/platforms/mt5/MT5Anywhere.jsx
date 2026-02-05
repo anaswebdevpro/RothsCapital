@@ -8,15 +8,12 @@ const MT5Anywhere = () => {
             <Container>
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     <div className="lg:w-1/2 order-2 lg:order-1">
-                        <div className="relative">
-                            {/* Device Mockup Groups */}
-                            <div className="flex justify-center items-end gap-2">
-                                <div className="w-64 md:w-80 h-40 md:h-56 bg-gray-100 rounded-t-xl border-t-8 border-x-8 border-gray-800 shadow-xl flex items-center justify-center">
-                                    <span className="text-gray-400">Desktop</span>
-                                </div>
-                            </div>
-                            {/* Overlaid Phones */}
-                            <div className="absolute bottom-0 -right-4 md:-right-8 w-20 md:w-28 h-32 md:h-44 bg-gray-800 rounded-xl border-4 border-gray-900 shadow-2xl skew-y-6"></div>
+                        <div className="relative flex justify-center">
+                            <img
+                                src="/LaptopWithPhone.png"
+                                alt="Trade on any device"
+                                className="w-full max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                            />
                         </div>
                     </div>
 
@@ -27,15 +24,15 @@ const MT5Anywhere = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                            <button className="flex items-center gap-3 bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 transition-opacity">
-                                <Apple className="w-8 h-8" />
+                            <button className="flex items-center gap-3 bg-gray-100 text-black px-5 py-2 rounded-lg hover:opacity-80 hover:scale-105 transition-all">
+                                <img src="/apple-black-logo-svgrepo-com.svg" alt="" className='w-8 h-8' />
                                 <div className="text-left">
                                     <div className="text-[10px] uppercase">Download on the</div>
                                     <div className="text-lg font-bold leading-none">App Store</div>
                                 </div>
                             </button>
                             <button className="flex items-center gap-3 bg-black text-white px-5 py-2 rounded-lg hover:opacity-80 transition-opacity">
-                                <Play className="w-7 h-7 fill-current" />
+                                <img src="/playstore-svgrepo-com.svg" alt="" className='w-8 h-8' />
                                 <div className="text-left">
                                     <div className="text-[10px] uppercase">Get it on</div>
                                     <div className="text-lg font-bold leading-none">Google Play</div>

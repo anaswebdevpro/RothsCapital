@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 
 const MT5Hero = () => {
     return (
-        <section className="relative w-full py-20 md:py-32 bg-gray-50 overflow-hidden">
-            <Container className="relative z-10 flex flex-col md:flex-row items-center gap-12">
+        <section className="relative w-full py-5 md:py-10 bg-gray-50 overflow-hidden min-h-screen flex items-start" style={{ backgroundImage: 'url(/bg-6.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <Container className="relative z-10 flex flex-col md:flex-row items-center  gap-12">
                 <div className="flex-1 text-left">
                     <motion.div
                         initial={{ opacity: 0, y: 10 }}
@@ -20,7 +20,7 @@ const MT5Hero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 leading-tight"
+                        className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight"
                     >
                         Trade Smarter with <span className="text-secondary">MetaTrader 5</span>
                     </motion.h1>
@@ -53,9 +53,9 @@ const MT5Hero = () => {
                     {/* Placeholder for Hero Image - representing the platform interface */}
                     <div className="relative z-10">
                         <img
-                            src="/LaptopWithPhone.png"
+                            src="/mt5phone.png"
                             alt="MetaTrader 5 Platform"
-                            className="rounded-lg shadow-2xl border border-gray-100 w-full max-w-lg mx-auto transform hover:scale-[1.02] transition-transform duration-500"
+                            className="rounded-lg border border-gray-100 w-full max-w-lg mx-auto transform hover:scale-[1.02] transition-transform duration-500"
                             onError={(e) => {
                                 e.target.style.display = 'none';
                                 e.target.parentElement.innerHTML = '<div class="w-full h-[400px] bg-gray-100 rounded-lg flex items-center justify-center text-gray-400">Platform Preview Image</div>';

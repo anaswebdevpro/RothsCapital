@@ -1,37 +1,43 @@
 import React from 'react';
 import { Container } from '../../../ui/Layout';
-import { Monitor, Apple, Smartphone, Globe, ArrowUpRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const downloads = [
     {
-        icon: <Monitor className="w-8 h-8" />,
-        title: "MT5 for Windows",
-        subtitle: "Desktop Application",
-        link: "#windows"
+        iconUrl: "/microsoft-windows-svgrepo-com.svg",
+        title: "Windows",
+        subtitle: "Desktop OS",
+        link: "#windows",
+        className: ""
     },
     {
-        icon: <Apple className="w-8 h-8" />,
-        title: "MT5 for macOS",
-        subtitle: "Desktop Application",
-        link: "#mac"
+        iconUrl: "/macos-svgrepo-com.svg", // Fixed path based on context likely available
+        title: "macOS",
+        subtitle: "Desktop OS",
+        link: "#mac",
+        className: ""
     },
     {
-        icon: <Smartphone className="w-8 h-8" />,
-        title: "MT5 for iOS",
-        subtitle: "Mobile Application",
-        link: "#ios"
+        iconUrl: "/apple-black-logo-svgrepo-com.svg",
+        title: "iOS",
+        subtitle: "Mobile App",
+        link: "#ios",
+        className: "invert"
     },
     {
-        icon: <Smartphone className="w-8 h-8" />,
-        title: "MT5 for Android",
-        subtitle: "Mobile Application",
-        link: "#android"
+        iconUrl: "/android-color-svgrepo-com.svg",
+        title: "Android",
+        subtitle: "Mobile App",
+        link: "#android",
+        className: ""
     },
     {
-        icon: <Globe className="w-8 h-8" />,
-        title: "MT5 for Web",
-        subtitle: "Browser-based Platform",
-        link: "#web"
+        iconUrl: "/chrome-color-svgrepo-com.svg",
+        title: "Web Trader",
+        subtitle: "Browser Based",
+        link: "#web",
+        className: ""
     }
 ];
 
@@ -39,39 +45,43 @@ const MT5Downloads = () => {
     return (
         <section className="py-24 bg-secondary relative overflow-hidden">
             {/* Bronze/Gold Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#A07E44] to-[#785C2F] opacity-90"></div>
+            <div className="absolute inset-0 bg-gold-gradient opacity-90"></div>
 
-            {/* Wavy Pattern Overlay (simulated with CSS radial gradients) */}
+            {/* Pattern Overlay */}
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, white 0%, transparent 50%), radial-gradient(circle at 80% 0%, white 0%, transparent 50%)' }}></div>
 
             <Container className="relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Get Started in Minutes</h2>
-                    <p className="text-lg text-white/80 max-w-2xl mx-auto">Download MT5 and begin your trading journey with Roths Capital today.</p>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Download MetaTrader 5</h2>
+                    <p className="text-lg text-gray-800 max-w-2xl mx-auto">Get the world's #1 trading platform on your preferred device.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div className="flex flex-wrap justify-center gap-6">
                     {downloads.map((item, index) => (
-                        <a
+                        <motion.a
                             key={index}
                             href={item.link}
-                            className="bg-white rounded-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group block relative overflow-hidden"
+                            whileHover={{ y: -10 }}
+                            className="w-full sm:w-[200px] bg-[#0B1221] rounded-3xl p-8 flex flex-col items-center justify-center text-center border border-white/10 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 group cursor-pointer relative overflow-hidden"
                         >
-                            <div className="flex justify-between items-start mb-8">
-                                <div className="p-3 bg-gray-50 rounded-lg text-secondary group-hover:bg-primary/10 group-hover:text-primary transition-colors">
-                                    {item.icon}
-                                </div>
-                                <div className="p-1 rounded-full border border-gray-200 text-gray-400 group-hover:border-primary group-hover:text-primary transition-colors">
-                                    <ArrowUpRight className="w-4 h-4" />
-                                </div>
+                            {/* Glow Effect */}
+                            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+                            <div className="w-20 h-20 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-white/5">
+                                <img
+                                    src={item.iconUrl}
+                                    alt={item.title}
+                                    className={`w-10 h-10 object-contain ${item.className}`}
+                                />
                             </div>
 
-                            <h3 className="text-lg font-bold text-gray-900 mb-1 font-heading">{item.title}</h3>
-                            <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">{item.subtitle}</p>
+                            <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                            <p className="text-sm text-gray-400 mb-6 font-medium tracking-wide uppercase">{item.subtitle}</p>
 
-                            {/* Hover bar */}
-                            <div className="absolute bottom-0 left-0 w-full h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
-                        </a>
+                            <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/50 group-hover:bg-primary group-hover:border-primary group-hover:text-secondary transition-all">
+                                <ArrowRight className="w-4 h-4 group-hover:-rotate-45 transition-transform duration-300" />
+                            </div>
+                        </motion.a>
                     ))}
                 </div>
             </Container>

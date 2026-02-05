@@ -28,14 +28,11 @@ const MT5Features = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     {/* Left Column - Mobile Image */}
                     <div className="lg:w-1/2 flex justify-center lg:justify-end">
-                        <div className="relative w-[300px] md:w-[350px] h-[600px] bg-gray-900 rounded-[3rem] border-8 border-gray-800 shadow-2xl overflow-hidden">
-                            {/* Screen Content Mockup */}
-                            <div className="absolute inset-0 bg-gray-800 flex items-center justify-center text-white/20">
-                                <span className="text-4xl font-bold -rotate-90">MT5 MOBILE</span>
-                            </div>
-                            {/* iPhone notch notion */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-7 bg-gray-800 rounded-b-2xl"></div>
-                        </div>
+                        <img
+                            src="/whyChoseMt5.png"
+                            alt="MT5 Mobile"
+                            className="w-full max-w-[350px] mx-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                        />
                     </div>
 
                     {/* Right Column - Content */}

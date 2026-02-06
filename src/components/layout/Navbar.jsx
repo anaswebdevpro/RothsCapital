@@ -73,7 +73,7 @@ export default function Navbar() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 z-50 bg-[#151925] text-white backdrop-blur-md py-1 shadow-sm"
+            className="fixed top-0 left-0 right-0 z-50 py-1 shadow-sm bg-white"
             onMouseLeave={() => setHoveredLink(null)}
         >
             <Container>
@@ -94,7 +94,7 @@ export default function Navbar() {
                             >
                                 <Link
                                     to={link.href}
-                                    className="flex items-center text-sm lg:text-base font-medium text-white hover:text-primary transition-colors py-4"
+                                    className="flex items-center text-sm lg:text-base font-medium text-secondary hover:text-primary transition-colors py-4"
                                 >
                                     {link.name}
                                     {link.subItems && (
@@ -137,7 +137,7 @@ export default function Navbar() {
 
                     {/* CTA Buttons */}
                     <div className="hidden md:flex items-center space-x-4">
-                        <Button variant="ghost" size="md" className="text-white hover:bg-white/10 hover:text-primary">Log In</Button>
+                        <Button variant="ghost" size="md" className="text-secondary hover:bg-gray-100 hover:text-primary">Log In</Button>
                         <Button size="md">Register</Button>
                     </div>
 
@@ -145,7 +145,7 @@ export default function Navbar() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="text-white hover:text-primary"
+                            className="text-secondary hover:text-primary"
                         >
                             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>

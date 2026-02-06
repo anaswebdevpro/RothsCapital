@@ -23,7 +23,7 @@ const IBHero = () => {
                     transition={{ duration: 0.6 }}
                     className="text-5xl md:text-7xl font-bold mb-6 tracking-tight uppercase"
                 >
-                    Partner Program
+                    Roths Capitals <span className="text-primary">Partner Program</span>
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -31,15 +31,19 @@ const IBHero = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10"
                 >
-                    Join Roths Capital as an Introducing Broker (IB) or Key Opinion Leader (KOL). Earn competitive commissions and grow your business.
+                    Partner with us and grow your earnings as an Introducing Broker or Key Opinion Leader.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
+                    className="flex flex-col sm:flex-row justify-center gap-4"
                 >
                     <Button size="lg" className="px-8 bg-gold-gradient hover:brightness-110 border-none text-secondary font-bold">
-                        Become a Partner
+                        Become Our IB
+                    </Button>
+                    <Button size="lg" variant="outline" className="px-8 border-white text-white hover:bg-white hover:text-secondary font-bold">
+                        Become Our KOL
                     </Button>
                 </motion.div>
             </Container>

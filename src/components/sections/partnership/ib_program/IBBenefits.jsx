@@ -6,17 +6,17 @@ const benefits = [
     {
         icon: <BadgeDollarSign className="w-10 h-10 text-primary" />,
         title: "Attractive Commission Models",
-        description: "Choose the structure that suits your style—revenue sharing, rebates per lot traded, or CPA. Your earnings grow as your referred clients stay active."
+        description: "Choose the structure that suits your style—revenue sharing, rebates per lot traded, or Cost‑Per‑Acquisition. Your earnings grow as your referred clients stay active and trade consistently."
     },
     {
         icon: <Headphones className="w-10 h-10 text-primary" />,
-        title: "Dedicated Support",
-        description: "Gain access to a powerful IB dashboard, personalized marketing materials, and a dedicated account manager to help you succeed."
+        title: "Dedicated Support & Advanced Tools",
+        description: "Gain access to a powerful IB dashboard, real-time tracking, personalized marketing materials, and a dedicated account manager to help you succeed."
     },
     {
         icon: <TrendingUp className="w-10 h-10 text-primary" />,
-        title: "Scalable Income",
-        description: "Whether you're an individual or a large network, your earning potential scales with your performance. Benefit from multi-tiered referral commissions."
+        title: "Scalable & Passive Income",
+        description: "Whether you're an individual, business, or network, your earning potential scales with your performance. Some IB arrangements even allow for multi-tiered referral commissions."
     }
 ];
 
@@ -25,7 +25,7 @@ const IBBenefits = () => {
         <section className="py-20 bg-gray-50">
             <Container>
                 <div className="text-center mb-16 px-4">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Why Partner with Us?</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Why Partner with Roths Capitals as an IB?</h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">We provide the tools, conditions, and support you need to build a profitable business.</p>
                 </div>
 

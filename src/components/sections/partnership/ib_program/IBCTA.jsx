@@ -12,14 +12,14 @@ const IBCTA = () => {
             <Container className="relative z-10 text-center text-secondary">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Start Your Partnership Journey?</h2>
                 <p className="text-xl text-secondary/80 max-w-2xl mx-auto mb-10">
-                    Join thousands of partners who have chosen Roths Capital to monetize their traffic and network.
+                    Join thousands of partners who trust Roths Capitals for their partnership needs. Start earning competitive commissions today.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90 border-none font-bold px-10">
-                        Join Now
+                        Become Our IB
                     </Button>
                     <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white px-10">
-                        Contact Partner Team
+                        Become Our KOL
                     </Button>
                 </div>
             </Container>

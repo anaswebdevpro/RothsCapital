@@ -22,7 +22,7 @@ const IBTypes = () => {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 relative z-10">Introducing Broker (IB)</h2>
                         <p className="text-gray-600 mb-8 leading-relaxed relative z-10 min-h-[80px]">
-                            Join an award-winning program designed for financial professionals. Maximize your earnings with optimal rebates and provide exceptional service to your clients.
+                            Designed to offer individuals and corporate clients an opportunity to earn ongoing rebates from their clients' trading activities.
                         </p>
 
                         <div className="space-y-4 mb-8 relative z-10">
@@ -42,7 +42,7 @@ const IBTypes = () => {
 
                         <div className="relative z-10">
                             <Button className="w-full sm:w-auto bg-secondary text-white hover:bg-secondary/90">
-                                Become an IB <ArrowRight className="ml-2 w-4 h-4" />
+                                Become Our IB <ArrowRight className="ml-2 w-4 h-4" />
                             </Button>
                         </div>
                     </motion.div>
@@ -60,7 +60,7 @@ const IBTypes = () => {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 relative z-10">Key Opinion Leader (KOL)</h2>
                         <p className="text-gray-600 mb-8 leading-relaxed relative z-10 min-h-[80px]">
-                            Designed for influencers and thought leaders. Promote our premium services to your audience and earn attractive commissions for every referral.
+                            Designed for influencers, our KOL Program lets you earn commissions by promoting our services and sharing valuable trading insights.
                         </p>
 
                         <div className="space-y-4 mb-8 relative z-10">

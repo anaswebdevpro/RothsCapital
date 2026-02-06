@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Container } from '../../../ui/Layout';
+import { Calendar } from 'lucide-react';
 
 const CalendarWidget = () => {
     const containerRef = useRef();
@@ -26,11 +27,21 @@ const CalendarWidget = () => {
     }, []);
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-24 bg-gray-50">
             <Container>
-                <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-2">
-                    <div className="tradingview-widget-container" ref={containerRef}>
-                        <div className="tradingview-widget-container__widget"></div>
+                {/* Custom Wrapper matching Roths Capitals */}
+                <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                    {/* Header */}
+                    <div className="bg-[#D4AF37] px-6 py-4 flex items-center gap-3">
+                        <Calendar className="text-white w-6 h-6" />
+                        <h2 className="text-xl font-bold text-white uppercase tracking-wide">Live Economic Calendar</h2>
+                    </div>
+
+                    {/* Widget Content */}
+                    <div className="p-1 min-h-[800px]">
+                        <div className="tradingview-widget-container" ref={containerRef}>
+                            <div className="tradingview-widget-container__widget"></div>
+                        </div>
                     </div>
                 </div>
             </Container>
